@@ -126,7 +126,9 @@ To add a sequence keybinding, copy and paste the example sequence keybinding and
 ```javascript
 { keys: ['Shift', 'KeyS'], text: 'Inserting text with Shift + S', type: 'sequence' },
 ```
-## Step 6: Save the content.js file.
+## Step 6: 
+
+Save the content.js file.
 
 To use the updated keybindings, you need to reload the extension in your browser. Go to the Extensions or Add-ons page in your browser settings, find the extension associated with the content.js file, and click the reload or refresh button.
 
