@@ -61,7 +61,7 @@ To remove the add-on from Google Chrome, follow these steps:
 
 
 # Add new Keybinds
-Step 1: Set your preferred keybindings and output texts here
+## Step 1: Set your preferred keybindings and output texts here
 
 Define an array of keybindings, where each binding consists of keys to be pressed and the corresponding text to be inserted.
 
@@ -81,7 +81,7 @@ const bindings = [
   // Modify the keys array with the desired key sequence and add the associated text
 ];
 ```
-Step 2: Initialize the keypress state by frame
+## Step 2: Initialize the keypress state by frame
 
 This object will store the current key sequence and the last key time for each frame (window/iframe).
 
@@ -89,7 +89,7 @@ This object will store the current key sequence and the last key time for each f
 const keypressStateByFrame = {};
 ```
 
-Step 3: Define the insertText function
+## Step 3: Define the insertText function
 
 This function inserts the specified text at the current cursor position in the active element (text area or contenteditable element).
 
@@ -99,7 +99,7 @@ function insertText(text) {
 }
 ```
 
-Step 4: Define the handleKeyDown function
+## Step 4: Define the handleKeyDown function
 
 This function handles the keydown event and checks for key combinations or sequences defined in the bindings array.
 
@@ -109,7 +109,7 @@ function handleKeyDown(event) {
 }
 ```
 
-Step 5: Add the keydown event listener to the window
+## Step 5: Add the keydown event listener to the window
 
 This listens for keydown events and triggers the handleKeyDown function.
 
@@ -126,7 +126,7 @@ To add a sequence keybinding, copy and paste the example sequence keybinding and
 ```javascript
 { keys: ['Shift', 'KeyS'], text: 'Inserting text with Shift + S', type: 'sequence' },
 ```
-Save the content.js file.
+## Step 6: Save the content.js file.
 
 To use the updated keybindings, you need to reload the extension in your browser. Go to the Extensions or Add-ons page in your browser settings, find the extension associated with the content.js file, and click the reload or refresh button.
 
