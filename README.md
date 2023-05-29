@@ -94,7 +94,6 @@ Step 3: Define the insertText function
 This function inserts the specified text at the current cursor position in the active element (text area or contenteditable element).
 
 ```javascript
-Copy code
 function insertText(text) {
   // Function code here
 }
@@ -105,7 +104,6 @@ Step 4: Define the handleKeyDown function
 This function handles the keydown event and checks for key combinations or sequences defined in the bindings array.
 
 ```javascript
-Copy code
 function handleKeyDown(event) {
   // Function code here
 }
