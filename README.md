@@ -58,3 +58,36 @@ To remove the add-on from Google Chrome, follow these steps:
 - Remember to disable or remove any locally loaded add-ons that you no longer need to keep your browser clean and avoid potential conflicts or performance issues.
 
 - For further information or detailed documentation, refer to the official Chrome Extension Developer documentation available at https://developer.chrome.com/docs/extensions/.
+
+
+Open the content.js file in a text editor.
+
+Scroll down to the section labeled "Step 1: Set your preferred keybindings and output texts here."
+
+To add a combination keybinding, locate the example combination keybinding:
+
+javascript
+Copy code
+{ keys: ['Control', '.'], text: 'Hello, World!', type: 'combination' },
+Copy and paste this line to add more combination keybindings. Modify the keys array with the desired key combination and add the associated text. For example:
+
+javascript
+Copy code
+{ keys: ['Alt', 'KeyA'], text: 'Inserting text with Alt + A', type: 'combination' },
+You can add as many combination keybindings as you need by following this pattern.
+
+To add a sequence keybinding, locate the example sequence keybinding:
+
+javascript
+Copy code
+{ keys: ['Alt', '2', '2', '1'], text: '-', type: 'sequence' },
+Copy and paste this line to add more sequence keybindings. Modify the keys array with the desired key sequence and add the associated text. For example:
+
+javascript
+Copy code
+{ keys: ['Shift', 'KeyS'], text: 'Inserting text with Shift + S', type: 'sequence' },
+You can add as many sequence keybindings as you need by following this pattern.
+
+Once you have added your desired keybindings, save the content.js file.
+
+To use the updated keybindings, you need to reload the extension in your browser. You can do this by going to the Extensions or Add-ons page in your browser settings, finding the extension associated with the content.js file, and clicking the reload or refresh button.
