@@ -123,7 +123,9 @@ To add more keybindings, follow these steps:
 To add a combination keybinding, copy and paste the example combination keybinding and modify the keys array with the desired key combination and add the associated text. For example:
 ```javascript
 { keys: ['Alt', 'KeyA'], text: 'Inserting text with Alt + A', type: 'combination' },
+```
 To add a sequence keybinding, copy and paste the example sequence keybinding and modify the keys array with the desired key sequence and add the associated text. For example:
+```javascript
 { keys: ['Shift', 'KeyS'], text: 'Inserting text with Shift + S', type: 'sequence' },
 ```
 Save the content.js file.
