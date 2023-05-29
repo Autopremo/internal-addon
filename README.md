@@ -60,7 +60,7 @@ To remove the add-on from Google Chrome, follow these steps:
 - For further information or detailed documentation, refer to the official Chrome Extension Developer documentation available at https://developer.chrome.com/docs/extensions/.
 
 
-
+# Add new Keybinds
 Step 1: Set your preferred keybindings and output texts here
 
 Define an array of keybindings, where each binding consists of keys to be pressed and the corresponding text to be inserted.
