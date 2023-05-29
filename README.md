@@ -59,35 +59,22 @@ To remove the add-on from Google Chrome, follow these steps:
 
 - For further information or detailed documentation, refer to the official Chrome Extension Developer documentation available at https://developer.chrome.com/docs/extensions/.
 
+Step 1: Set your preferred keybindings and output texts here
 
-Open the content.js file in a text editor.
+Define an array of keybindings, where each binding consists of keys to be pressed and the corresponding text to be inserted.
 
-Scroll down to the section labeled "Step 1: Set your preferred keybindings and output texts here."
+Example combination keybinding:
 
-To add a combination keybinding, locate the example combination keybinding:
+```javascript
+const bindings = [
+  { keys: ['Control', '.'], text: 'Hello, World!', type: 'combination' },
+  // To add more combination keybindings:
+  // { keys: ['ModifierKey1', 'ModifierKey2', 'Key'], text: 'Text to be inserted', type: 'combination' },
+  // Modify the keys array with the desired key combination and add the associated text
 
-javascript
-Copy code
-{ keys: ['Control', '.'], text: 'Hello, World!', type: 'combination' },
-Copy and paste this line to add more combination keybindings. Modify the keys array with the desired key combination and add the associated text. For example:
-
-javascript
-Copy code
-{ keys: ['Alt', 'KeyA'], text: 'Inserting text with Alt + A', type: 'combination' },
-You can add as many combination keybindings as you need by following this pattern.
-
-To add a sequence keybinding, locate the example sequence keybinding:
-
-javascript
-Copy code
-{ keys: ['Alt', '2', '2', '1'], text: '-', type: 'sequence' },
-Copy and paste this line to add more sequence keybindings. Modify the keys array with the desired key sequence and add the associated text. For example:
-
-javascript
-Copy code
-{ keys: ['Shift', 'KeyS'], text: 'Inserting text with Shift + S', type: 'sequence' },
-You can add as many sequence keybindings as you need by following this pattern.
-
-Once you have added your desired keybindings, save the content.js file.
-
-To use the updated keybindings, you need to reload the extension in your browser. You can do this by going to the Extensions or Add-ons page in your browser settings, finding the extension associated with the content.js file, and clicking the reload or refresh button.
+  // Example sequence keybinding:
+  { keys: ['Alt', '2', '2', '1'], text: '-', type: 'sequence' },
+  // To add more sequence keybindings:
+  // { keys: ['Key1', 'Key2', 'Key3'], text: 'Text to be inserted', type: 'sequence' },
+  // Modify the keys array with the desired key sequence and add the associated text
+];
